@@ -14,7 +14,8 @@ public class IPv6Service {
         Elements links = doc.getElementsByClass("two columns");
         if (links.get(3).text().equals("PASS")){
             return true;
+        }else {
+            return false;
         }
-        return false;
     }
 }

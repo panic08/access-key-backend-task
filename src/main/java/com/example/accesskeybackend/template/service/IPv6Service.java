@@ -9,8 +9,8 @@ import java.io.IOException;
 
 @Service
 public class IPv6Service {
-    public boolean checkOnValide(String URI) throws IOException {
-        Document doc = Jsoup.connect("https://ready.chair6.net/?url=" + URI).get();
+    public boolean checkOnValide(String URL) throws IOException {
+        Document doc = Jsoup.connect("https://ready.chair6.net/?url=" + URL).get();
         Elements links = doc.getElementsByClass("two columns");
         if (links.get(3).text().equals("PASS")){
             return true;

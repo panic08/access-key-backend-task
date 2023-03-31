@@ -18,7 +18,8 @@ public class IPv6Controller  {
         IPv6Dto iPv6Dto = new IPv6Dto();
         iPv6Dto.setURL(siteUrl);
         iPv6Dto.setSuccess(iPv6Service.checkOnValide(siteUrl));
-
     return ResponseEntity.ok().body(iPv6Dto);
     }
+
+
 }
